@@ -9,7 +9,9 @@ Please scan this QR code to install & test this app on your device
 
 
 
-
 Or [click here](https://expo.dev/accounts/atharv_varshney/projects/nutriboom/builds/a633d305-3b9e-4f4a-864e-fd6a31692ed1).
+
+
+Checkout Google drive link [here](https://drive.google.com/drive/folders/1XuBiY0PrHBMqhMJWe9b9ikrZdMEzkzQ6?usp=sharing).
 
 Submission on behalf of our school - **Delhi Public School R.K. Puram**
