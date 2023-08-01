@@ -34,7 +34,9 @@ export default function home() {
             <ScrollView style={styles.container}>
                 <View style={styles.topBar}>
                     <View style={{ display: "flex", gap: 15, flexDirection: "row", alignItems: "center" }}>
-                        <Image source={require("../../assets/account_avatar.png")} style={{ width: 30, height: 30 }} />
+                        <Link href="/" style={{ width: 30, height: 30 }}>
+                            <Image source={require("../../assets/account_avatar.png")} style={{ width: 30, height: 30 }} />
+                        </Link>
                         <Text style={styles.white75text}>Hi, Atharv</Text>
                     </View>
                     <Link href="/cart" style={{ width: 30, height: 40 }}>
