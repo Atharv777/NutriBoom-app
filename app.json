@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1a1a1a"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -21,7 +21,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1a1a1a"
-      }
+      },
+      "package": "com.atharv_varshney.nutriboom"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -31,5 +32,19 @@
       "expo-router"
     ],
     "scheme": "nutriboom",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e8996b6a-dbbe-464c-b333-e917dc898d73"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e8996b6a-dbbe-464c-b333-e917dc898d73"
+    }
   }
 }

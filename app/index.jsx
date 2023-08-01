@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View, ImageBackground, Image, Dimensions, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, Image, Dimensions, TouchableOpacity, ScrollView } from 'react-native';
 import { COLORS } from '../constants';
 
-
 import { useFonts, Outfit_500Medium } from '@expo-google-fonts/outfit';
+import { Link } from 'expo-router';
 
 export default function LoginScreen() {
 
@@ -13,7 +13,8 @@ export default function LoginScreen() {
 
     if (fontsLoaded) {
         return (
-            <View style={styles.container}>
+            // <View style={styles.container}>
+            <ScrollView style={styles.container} contentContainerStyle={{ flexGrow: 1 }}>
                 <ImageBackground source={require("../assets/mobile_bg_illustration.png")} resizeMode='cover' style={styles.bgImg}>
                     <View style={styles.innerView}>
                         <View style={{ display: "flex", justifyContent: "flex-end", flex: 1 }}>
@@ -21,13 +22,14 @@ export default function LoginScreen() {
                         </View>
 
                         <View style={{ display: "flex", justifyContent: "flex-end", flex: 1 }}>
-                            <TouchableOpacity style={styles.button}>
+                            <View style={styles.button}>
                                 <Link href="/home" style={styles.buttonTxt}>Sign up with Google</Link>
-                            </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
                 </ImageBackground>
-            </View>
+            </ScrollView>
+            //</View>
         );
     }
 }
@@ -37,7 +39,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: COLORS.bg,
-        color: COLORS.white
+        color: COLORS.white,
     },
     bgImg: {
         width: "100%",
