@@ -156,7 +156,8 @@ const styles = StyleSheet.create({
         alignSelf: "stretch",
         borderRadius: 50,
         backgroundColor: "rgba(255, 255, 255, 0.1)",
-        marginTop: 50
+        marginTop: 50,
+        marginBottom: 100
     },
     buttonTxt: {
         color: COLORS.white90,
